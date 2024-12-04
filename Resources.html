@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Learn English</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <!-- Google Fonts (Adding a modern font for improved readability) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans', sans-serif; /* Set a clean, modern font for the body */
+            background: url('Assets/LoginBg.png') no-repeat center center fixed; /* Background image */
+            background-size: cover;
+            color: #f4a59d; /* Coral Pink text color */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+        }
+
+        /* Navigation bar styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FF8C00; /* Dark Orange background for navbar */
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav-left {
+            display: flex;
+            align-items: center;
+        }
+        .brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #762016; /* Dark Gold for brand name */
+            margin-right: 30px;
+            font-family: 'Copperplate', 'Papyrus', fantasy; /* Custom font for brand */
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #FFFFFF; /* White text for navigation links */
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s;
+            font-family: 'Roboto', sans-serif; /* Modern font for nav links */
+        }
+        .nav-links a:hover {
+            color: #FFD700; /* Gold on hover */
+        }
+        .nav-right a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 10px;
+            padding: 8px 15px;
+            background-color: #FF69B4; /* Hot Pink for buttons */
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+        .nav-right a:hover {
+            background-color: #FF6F61; /* Coral Pink on hover */
+        }
+
+        /* Resources Section Styles */
+        .resources-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('Assets/video-bg.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .resources-section h2 {
+            font-size: 3rem;
+            color: #FF69B4; /* Hot Pink for section title */
+            margin-bottom: 20px;
+            font-family: 'Papyrus', fantasy; /* Papyrus font for headings */
+        }
+
+        .video-container, .pdf-links-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .video-item {
+            flex: 1 1 300px; /* Each video will be at least 300px wide */
+            max-width: 320px; /* Each video has a maximum width */
+            text-align: center;
+        }
+
+        .video-item iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            border-radius: 10px; /* Rounded corners for iframe videos */
+        }
+
+        .video-description, .pdf-description {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            color: #333; /* Dark color for descriptions */
+            font-family: 'Roboto', sans-serif; /* Modern font for descriptions */
+        }
+
+        /* PDF Link Styles */
+        .pdf-link {
+            background-color: #FF69B4; /* Hot Pink for link buttons */
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.3rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: 'Roboto', sans-serif; /* Modern font for button */
+        }
+
+        .pdf-link:hover {
+            background-color: #FF6F61; /* Coral Pink on hover */
+        }
+
+        /* Sticky Footer Styles */
+        footer {
+            background-color: #FF8C00; /* Dark Orange background */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-left">
+            <div class="brand">LearnEng</div> <!-- Brand Name with Custom Font -->
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Vocabulary Games</a>
+                <a href="#">Grammar Lessons</a>
+                <a href="#">Writing Lessons</a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+    </nav>
+
+    <!-- Resources Section -->
+    <div class="resources-section">
+        <h2>Resources for Learning English</h2>
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/GgO4T_QGXzE?si=EVI5mOy5_RtkFApP" title="English Learning Video 1"></iframe>
+                <div class="video-description">Introduction to English Grammar</div>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/JNp1v-_aCkI?si=skvdJ979QTku9sUG" title="English Learning Video 2"></iframe>
+                <div class="video-description">Basic English Vocabulary</div>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/ldSgoYKcSgQ?si=jrPw89g4LKlHSv4L" title="English Learning Video 3"></iframe>
+                <div class="video-description">How to Improve Your Storytelling</div>
+            </div>
+        </div>
+
+        <!-- PDF Links Section -->
+        <h3>Downloadable PDFs and Other Learning Materials</h3>
+        <div class="pdf-links-container">
+            <a href="Resources/Grammar_Basics.pdf" class="pdf-link" target="_blank">Download Grammar Basics PDF</a>
+            <a href="Resources/Vocabulary_List.pdf" class="pdf-link" target="_blank">Download Vocabulary List PDF</a>
+            <a href="Resources/English_Pronunciation_Tips.pdf" class="pdf-link" target="_blank">Download Pronunciation Tips PDF</a>
+        </div>
+
+        <!-- Additional References Section -->
+        <h3>Additional References</h3>
+        <div class="pdf-description">
+            <p>Here are some additional references to enhance your English learning experience:</p>
+            <ul>
+                <li><a href="https://www.englishclub.com/" target="_blank">English Club: A great resource for all things English</a></li>
+                <li><a href="https://www.bbc.co.uk/learningenglish/" target="_blank">BBC Learning English</a></li>
+                <li><a href="https://www.duolingo.com/" target="_blank">Duolingo: A fun and interactive app for learning English</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sticky Footer -->
+    <footer>
+        <p>&copy; 2024 LearnEng - All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

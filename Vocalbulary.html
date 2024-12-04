@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('Assets/LoginBg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #FF6F61;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FF8C00;
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav-links a, .brand {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+        .nav-links a:hover {
+            color: #FFD700;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .game-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            background: #fff;
+            margin-bottom: 20px;
+        }
+        .game-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .question {
+            font-size: 1.2rem;
+            color: black;
+            margin-top: 15px;
+        }
+        .btn {
+            background-color: #FF69B4;
+            color: white;
+            margin-top: 15px;
+            border-radius: 20px;
+        }
+        .btn:hover {
+            background-color: #FF6F61;
+        }
+        .streak-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .streak {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #bd425e;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="brand">LearnEnglish</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Vocabulary Games</a>
+            <a href="#">Grammar Lessons</a>
+            <a href="#">Writing Lessons</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center text-danger">Vocabulary Games</h1>
+        <p class="text-center text-muted">Test your skills with engaging vocabulary questions.</p>
+
+        <div class="streak-container">
+            <span>Your practice streak:</span>
+            <div class="streak">5 Days</div> <!-- Example: Update this manually -->
+        </div>
+
+        <!-- Game Cards -->
+        <div class="game-card">
+            <img src="Assets/Catexcer.gif" alt="Study" width="200" height="150">
+            <div class="question">Choose the correct spelling: "________ is important for good health."</div>
+            <select class="form-select">
+                <option>Select an answer</option>
+                <option>Exersize</option>
+                <option>Exercise</option>
+                <option>Excerise</option>
+                <option>Exersizee</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Assets/happycat.gif" alt="Forest" width="200" height="150">
+            <div class="question">Find the antonym of "happy."</div>
+            <select class="form-select">
+                <option>Select antonym</option>
+                <option>Sad</option>
+                <option>Joyful</option>
+                <option>Excited</option>
+                <option>Angry</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Assets/child.gif" alt="Ocean" width="160" height="150">
+            <div class="question">Choose the correct plural form of "child."</div>
+            <select class="form-select">
+                <option>Select an answer</option>
+                <option>Childs</option>
+                <option>Children</option>
+                <option>Childern</option>
+                <option>Chilren</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Assets/curtains.gif" alt="City" width="150" height="140">
+            <div class="question">The curtains were "________ aside so we could see through the window."</div>
+            <select class="form-select">
+                <option>Select answer</option>
+                <option>Swung</option>
+                <option>Cleaned</option>
+                <option>Replaced</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Assets/catball.gif" alt="Cat" width="160" height="150">
+            <div class="question">Which of the following words best captures the overall tone of the cat’s actions in this scenario?</div>
+            <select class="form-select">
+                <option>Select answer</option>
+                <option>Languid</option>
+                <option>Exultant</option>
+                <option>Melancholic</option>
+                <option>Dispassionate</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Assets/travel.gif" alt="Sunrise" width="150" height="140">
+            <div class="question">The view was so "_______ that we couldn't look away."</div>
+            <select class="form-select">
+                <option>Select answer</option>
+                <option>Astonishing</option>
+                <option>Routine</option>
+                <option>Monotonous</option>
+                <option>Ordinary</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Assets/light.gif" alt="Night" width="120" height="120">
+            <div class="question">Find the antonym of "light."</div>
+            <select class="form-select">
+                <option>Select antonym</option>
+                <option>Heavy</option>
+                <option>Bright</option>
+                <option>Soft</option>
+                <option>Dark</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Assets/compcat.gif" alt="Programming" width="150" height="150">
+            <div class="question">Becoming a good programmer requires "" dedication and practice.</div>
+            <select class="form-select">
+                <option>Select answer</option>
+                <option>Immense</option>
+                <option>Minimal</option>
+                <option>Half-hearted</option>
+                <option>Negligible</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

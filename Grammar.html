@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('Assets/LoginBg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #FF6F61;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FF8C00;
+            padding: 15px 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav-links a, .brand {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+        .nav-links a:hover {
+            color: #FFD700;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .game-card {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            background: #fff;
+            margin-bottom: 20px;
+        }
+        .game-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .question {
+            font-size: 1.2rem;
+            color: black;
+            margin-top: 15px;
+        }
+        .btn {
+            background-color: #FF69B4;
+            color: white;
+            margin-top: 15px;
+            border-radius: 20px;
+        }
+        .btn:hover {
+            background-color: #FF6F61;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="brand">LearnEnglish</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Grammar Games</a>
+            <a href="#">Vocabulary Lessons</a>
+            <a href="#">Writing Lessons</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center text-danger">Grammar Games</h1>
+        <p class="text-center text-muted">Test your skills with fun grammar questions.</p>
+
+        <!-- Game Cards -->
+        <div class="game-card">
+            <img src="Assets\schoolcat.gif" alt="Study" width="140" height="150">
+            <div class="question">Choose the correct form of the verb: "Minii __________ to the school every day."</div>
+            <select class="form-select">
+                <option>Select an answer</option>
+                <option>Go</option>
+                <option>Goes</option>
+                <option>Gone</option>
+                <option>Going</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Assets\sleepcat.gif" alt="slp" width="180" height="150">
+            <div class="question">Identify the subject of the sentence: "The cat slept on the couch."</div>
+            <select class="form-select">
+                <option>Select subject</option>
+                <option>Cat</option>
+                <option>Slept</option>
+                <option>Couch</option>
+                <option>The</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        
+        <div class="game-card">
+            <img src="Assets\Apple.gif" alt="apple" width="150" height="130">
+            <div class="question">7. What is the correct article for: "_____ apple a day keeps the doctor away."</div>
+            <select class="form-select">
+                <option>Select article</option>
+                <option>A</option>
+                <option>An</option>
+                <option>The</option>
+                <option>None</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Assets\catfish.gif" alt="Cat with a fish" width="150" height="150">
+            <div class="question">Select the correct sentence:</div>
+            <select class="form-select">
+                <option>Select the correct option</option>
+                <option>The cat caught a fish.</option>
+                <option>The cat has caught a fish.</option>
+                <option>The cat is catching a fish.</option>
+                <option>The cat were catching a fish.</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+        
+
+
+        <div class="game-card">
+            <img src="Assets\cat in box.gif" alt="Cat in a box" width="150" height="150">
+            <div class="question">The cat is _______ the box."</div>
+            <select class="form-select">
+                <option>Select the correct preposition</option>
+                <option>on</option>
+                <option>at</option>
+                <option>in</option>
+                <option>under</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="Assets\rain.gif" alt="Rainy Weather" width="150" height="150">
+            <div class="question">In the sentence "It is rainy weather," which word is an adjective?</div>
+            <select class="form-select">
+                <option>Select the correct option</option>
+                <option>It</option>
+                <option>is</option>
+                <option>rainy</option>
+                <option>weather</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+        
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?ocean,sea" alt="Ocean">
+            <div class="question">Choose the correct punctuation: "I can speak English __________ Spanish."</div>
+            <select class="form-select">
+                <option>Select punctuation</option>
+                <option>and</option>
+                <option>or</option>
+                <option>but</option>
+                <option>so</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?mountain,landscape" alt="Mountain">
+            <div class="question">Identify the adjective in the sentence: "She wore a beautiful dress."</div>
+            <select class="form-select">
+                <option>Select adjective</option>
+                <option>She</option>
+                <option>Wore</option>
+                <option>Dress</option>
+                <option>Beautiful</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?cloud,sky" alt="Cloudy Sky">
+            <div class="question">Which of these is an example of a verb?</div>
+            <select class="form-select">
+                <option>Select verb</option>
+                <option>Run</option>
+                <option>Beautiful</option>
+                <option>Fast</option>
+                <option>Table</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?sunset,beach" alt="Sunset">
+            <div class="question">Choose the correct form of the noun: "She bought a ________ of bread."</div>
+            <select class="form-select">
+                <option>Select answer</option>
+                <option>Loaf</option>
+                <option>Loafs</option>
+                <option>Loaves</option>
+                <option>Loafes</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?night,sky" alt="Night Sky">
+            <div class="question">Which sentence is in the past tense?</div>
+            <select class="form-select">
+                <option>Select sentence</option>
+                <option>She will go to the store.</option>
+                <option>She is going to the store.</option>
+                <option>She went to the store.</option>
+                <option>She goes to the store.</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?rain,rainy" alt="Rain">
+            <div class="question">Which word is a pronoun?</div>
+            <select class="form-select">
+                <option>Select pronoun</option>
+                <option>They</option>
+                <option>Beautiful</option>
+                <option>Run</option>
+                <option>Quickly</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?travel,airplane" alt="Travel">
+            <div class="question">Choose the correct form of the adjective: "She is the _______ student in the class."</div>
+            <select class="form-select">
+                <option>Select adjective form</option>
+                <option>Smartest</option>
+                <option>More smarter</option>
+                <option>Most smart</option>
+                <option>Smarter</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?beach,sea" alt="Beach">
+            <div class="question">Which is the correct plural form of the word "child"?</div>
+            <select class="form-select">
+                <option>Select plural form</option>
+                <option>Children</option>
+                <option>Childs</option>
+                <option>Childer</option>
+                <option>Childes</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?car,road" alt="Car on Road">
+            <div class="question">What is the correct question tag for the sentence: "You like chocolate, __________?"</div>
+            <select class="form-select">
+                <option>Select question tag</option>
+                <option>Do you</option>
+                <option>Don’t you</option>
+                <option>Doesn’t you</option>
+                <option>Are you</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?people,crowd" alt="Crowd">
+            <div class="question">Identify the adverb in the sentence: "He ran quickly to the store."</div>
+            <select class="form-select">
+                <option>Select adverb</option>
+                <option>Ran</option>
+                <option>Quickly</option>
+                <option>Store</option>
+                <option>He</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?mountain,adventure" alt="Mountain Adventure">
+            <div class="question">Choose the correct possessive adjective: "This is __________ book."</div>
+            <select class="form-select">
+                <option>Select possessive adjective</option>
+                <option>My</option>
+                <option>Mine</option>
+                <option>Your</option>
+                <option>Yours</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://source.unsplash.com/600x400/?history,ancient" alt="Ancient History">
+            <div class="question">Which is the correct form of the sentence: "They ___________ to school every day."</div>
+            <select class="form-select">
+                <option>Select form</option>
+                <option>Go</option>
+                <option>Goes</option>
+                <option>Going</option>
+                <option>Gone</option>
+            </select>
+            <button class="btn">Submit</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
